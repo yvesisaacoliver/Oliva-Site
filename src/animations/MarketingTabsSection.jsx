@@ -15,44 +15,44 @@ const tabs = [
    {
     title: "Estratégia",
     img: serv3,
-    description: "Entendemos seu negócio, público, oferta e processo de venda. A partir disso, criamos uma estratégia de marketing digital com prioridades, canais e metas para transformar marketing em receita."
+    description: "Entendimento do negócio, do público, da oferta e do processo comercial para definir os canais e ações com maior potencial para a empresa."
   },
 
     {
     title: "Redes Sociais",
     img: serv1,
-    description: "Criamos uma presença forte nas redes, com planejamento e execução. Definimos linguagem, pauta e identidade visual. Publicamos com foco em autoridade, engajamento e geração de demanda."
+    description: "Conteúdo e presença contínua, com linguagem e identidade visual consistentes, para manter a marca ativa, relevante e próxima do público."
   },
 
    {
     title: "Tráfego Pago",
     img: serv4,
-    description: "Gerenciamos anúncios online para vender mais. Google Ads, Meta Ads, e TikTok Ads com testes, otimização semanal e foco em conversão, receita e ROI."
+    description: "Campanhas pagas direcionadas ao público certo para gerar demanda e criar novas oportunidades de negócio no curto prazo."
   },
 
     {
     title: "SEO",
     img: serv7,
-    description: "Melhoramos seu posicionamento no Google com SEO técnico, páginas otimizadas e conteúdo estratégico. Foco em conversão, tráfego orgânico qualificado e crescimento no médio prazo."
+    description: "Otimização do site e dos conteúdos para ampliar a visibilidade no Google e atrair tráfego qualificado de forma orgânica."
   },
   
   {
     title: "Comunidade",
     img: serv2,
-    description: "Construímos uma comunidade em torno da sua marca para gerar confiança e recorrência. Criamos rotinas de interação, conteúdo e suporte para fortalecer relacionamento."
+    description: "Desenvolvimento de comunidade em torno da marca para fortalecer conexão, confiança e proximidade com o público."
   },
 
 
   {
     title: "Audiovisual",
     img: serv5,
-    description: "Produção audiovisual para fortalecer sua marca e aumentar conversão. Criamos fotos, vídeos e edição com identidade consistente, ideal para redes sociais, anúncios e materiais institucionais."
+    description: "Conteúdos audiovisuais desenvolvidos para tornar a marca mais marcante, desejável e bem posicionada."
   },
 
   {
     title: "Influenciadores",
     img: serv6,
-    description: "Fazemos marketing de influência com influenciadores alinhados ao seu público. Cuidamos de seleção, negociação, briefing e acompanhamento para gerar alcance qualificado e conversão."
+    description: "Campanhas com influenciadores para transferir atenção, confiança e relevância para a marca."
   },
 
 ];
@@ -67,7 +67,7 @@ const MarketingTabsSection = () => {
         Soluções de Marketing
       </h2>
       <p className={styles.smallBottom}>
-        Selecione um serviço e veja como transformamos marketing em resultados
+        Selecione um serviço e veja como ele contribui para o crescimento da sua empresa.
       </p>
 
       <div className={styles.contentGrid}>
