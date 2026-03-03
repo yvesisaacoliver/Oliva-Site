@@ -8,10 +8,10 @@ const Hero = () => {
       <section className="hero">
         <div className="hero-left">
           <h1 className="hero-title">MARKETING, TECNOLOGIA E DADOS</h1>
-          <p className="hero-subtitle">Inovação aplicada para sua empresa crescer</p>
+          <p className="hero-subtitle">Soluções digitais para impulsionar o crescimento do seu negócio</p>
           <button className="hero-button">Solicitar Proposta</button>
           <p className="hero-description">
-            A Arandu é uma consultoria digital que integra marketing, tecnologia e dados para estruturar o crescimento do seu negócio, com automação, segurança, estabilidade e decisões baseadas em dados.
+            Unimos marketing, tecnologia e dados para transformar desafios em oportunidades de crescimento. Da atração de clientes à automação de processos e à análise dos indicadores do seu negócio, desenvolvemos soluções sob medida para tornar sua empresa mais estruturada, eficiente e preparada para o próximo nível.
           </p>
         </div>
         <div className="hero-right">
