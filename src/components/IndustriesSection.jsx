@@ -14,32 +14,32 @@ const IndustriesSection = () => {
   const services = [
     {
       title: 'Sites, Portais e Sistemas',
-      description: 'Desenvolvimento de sites, portais e sistemas sob medida. UX/UI, performance e integrações para atrair clientes, organizar processos e escalar.',
+      description: 'Sites modernos que atraem clientes, portais que organizam a operação e sistemas que acompanham o crescimento do negócio.',
       icon: img1,
     },
     {
       title: 'IA e Agentes',
-      description: 'Automação com IA e agentes inteligentes para reduzir trabalho manual. Assistentes que entendem contexto, executam tarefas e aumentam produtividade.',
+      description: 'Agentes e automações inteligentes para reduzir trabalho manual, acelerar processos e ampliar a produtividade.',
       icon: img2,
     },
     {
       title: 'Cloud, Deploy & Performance',
-      description: 'Infraestrutura em cloud com ambientes bem configurados e escaláveis. Deploy confiável, estabilidade e base pronta para crescer com segurança.',
+      description: 'Infraestrutura em cloud e deploy confiável, com ambientes bem configurados para garantir escalabilidade, estabilidade e eficiência de custo.',
       icon: img3,
     },
     {
       title: 'Integrações & Automação',
-      description: 'Integramos APIs, CRM e sistemas para eliminar retrabalho. Automatizamos pedidos, pagamentos, notificações e fluxos com rastreabilidade.',
+      description: 'Integração de APIs, CRM e sistemas para automatizar pedidos, pagamentos, notificações e fluxos, tornando a operação mais eficiente.',
       icon: img4,
     },
     {
       title: 'Segurança e Gestão de Acessos',
-      description: 'Segurança aplicada com controle de acessos (IAM). MFA, permissões, auditoria e boas práticas para proteger dados e reduzir riscos.',
+      description: 'Estrutura de segurança e gestão de acessos para proteger ambientes, reduzir riscos de incidentes e reforçar a confiabilidade da operação.',
       icon: img4,
     },
     {
       title: 'Ferramentas Corporativas',
-      description: 'Configuramos e organizamos ferramentas corporativas (Jira/Confluence, Microsoft 365, e catálogos). Processos padronizados e operação mais eficiente.',
+      description: 'Ambientes corporativos para centralizar informações, alinhar times, estruturar processos e dar mais fluidez à rotina.',
       icon: img4,
     },
 
@@ -81,7 +81,7 @@ const IndustriesSection = () => {
           Soluções de Tecnologia
         </h2>
         <p className={styles.description}>
-          Desenvolvemos sites e sistemas, automatizamos processos, colocamos sua infraestrutura em cloud e reforçamos segurança. Tudo com performance, monitoramento e governança para crescer com estabilidade.
+           Estrutura digital para operar com mais eficiência, segurança e escalabilidade, de sites e sistemas à infraestrutura cloud, automação e governança.
         </p>
       </div>
 
