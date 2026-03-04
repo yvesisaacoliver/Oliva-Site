@@ -58,7 +58,7 @@ const HowWeAchieveResults = () => {
   }, []);
 
   const achievements = [
-    { img: img1, title: "Dashboards e BI", desc: "Dashboards em Power BI e Looker Studio para acompanhar KPIs e tomar decisões rápidas. Visual claro e filtros úteis." },
+    { img: img1, title: "Dashboards e BI", desc: "Dashboards e BI para reunir os principais indicadores em um só lugar, facilitar leituras rápidas, comparar metas, identificar gargalos e agir com rapidez diante dos desvios." },
     { img: img2, title: "Banco de Dados e Engenharia de Dados", desc: "Estruturamos banco de dados e pipelines para centralizar informações com segurança e escala. Base única para BI, relatórios e automações." },
     { img: img3, title: "Métricas e KPIs", desc: "Definimos métricas e KPIs que importam para o seu negócio. Acompanhamento de funil, vendas e operação para melhorar resultado e previsibilidade." },
     { img: img4, title: "Integração e ETL/ELT", desc: "Integramos sistemas e automatizamos ETL/ELT para atualizar dados sem esforço manual. Dados limpos e consistentes para relatórios sempre prontos." },
@@ -74,7 +74,7 @@ const HowWeAchieveResults = () => {
         Soluções de Dados
       </h2>
       <p className="description" ref={descRef}>
-        Transformamos dados em decisão: coletamos, organizamos e entregamos dashboards, análises e automações para aumentar performance e previsibilidade.      </p>
+         Visibilidade sobre os números do negócio: de vendas, custos e margens a estoque, operação e desempenho para decidir melhor, corrigir rotas e planejar com mais confiança.      </p>
 
       <div className="results-grid">
         {achievements.map((item, index) => (
