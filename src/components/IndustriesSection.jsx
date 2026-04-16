@@ -4,6 +4,8 @@ import img1 from "../assets/serv1.png";
 import img2 from "../assets/serv2.webp";
 import img3 from "../assets/serv-3.webp";
 import img4 from "../assets/serv4.png";
+import img5 from "../assets/serg1.png";
+import img6 from "../assets/seri1.png";
 import gsap from 'gsap';
 import ScrollTrigger from 'gsap/ScrollTrigger';
 
@@ -30,12 +32,12 @@ const IndustriesSection = () => {
     {
       title: 'Integrações & Automação',
       description: 'Integração de APIs, CRM e sistemas para automatizar pedidos, pagamentos, notificações e fluxos, tornando a operação mais eficiente.',
-      icon: img4,
+      icon: img6,
     },
     {
       title: 'Segurança e Gestão de Acessos',
       description: 'Estrutura de segurança e gestão de acessos para proteger ambientes, reduzir riscos de incidentes e reforçar a confiabilidade da operação.',
-      icon: img4,
+      icon: img5,
     },
     {
       title: 'Ferramentas Corporativas',
@@ -92,7 +94,6 @@ const IndustriesSection = () => {
               <img src={service.icon} alt={`${service.title} Icon`} className={styles.icon} />
               <h3 className={styles.title}>{service.title}</h3>
               <p className={styles.carddescription}>{service.description}</p>
-              <a href="#" className={styles.link}>Learn more...</a>
             </div>
           ))}
         </div>

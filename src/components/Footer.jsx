@@ -7,19 +7,39 @@ import Linkedin from "../assets/svg/in.svg"
 import Telegram from "../assets/svg/telegram.svg"
 import Medium from "../assets/svg/medium.svg"
 import tweeter from "../assets/svg/x.svg"
-import C from "../assets/svg/C.svg"
-import Liability from "../assets/liabilitycompany.png"
-import Designrush from "../assets/svg/Designrush.svg"
+import D from "../assets/svg/D.svg"
 
 const Footer = () => {
 
   const [email, setEmail] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState('');
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    if (email) {
-      setSubmitted(true);
+    if (!email) return;
+    setLoading(true);
+    setError('');
+    try {
+      const res = await fetch('https://api.brevo.com/v3/contacts', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'api-key': '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',
+        },
+        body: JSON.stringify({ email, updateEnabled: true }),
+      });
+      if (res.ok || res.status === 204) {
+        setSubmitted(true);
+      } else {
+        const data = await res.json();
+        setError(data.message || 'Erro ao inscrever. Tente novamente.');
+      }
+    } catch {
+      setError('Erro de conexão. Tente novamente.');
+    } finally {
+      setLoading(false);
     }
   };
 
@@ -36,22 +56,26 @@ const Footer = () => {
         <div className="newsletter-right">
           <h2 className="newsletter-title">Receba insights de marketing, tech e dados</h2>
           <p className="newsletter-subtitle"></p>
-          <form onSubmit={handleSubmit} className="newsletter-form">
-            <input
-              type="email"
-              className="newsletter-input"
-              placeholder="Seu melhor e-mail"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              required
-            />
-            <button type="Inscrever" className="newsletter-submit">
-              Inscrever
-            </button>
-          </form>
+          {submitted ? (
+            <p className="thank-you-message">Agradecemos sua inscrição!</p>
+          ) : (
+            <form onSubmit={handleSubmit} className="newsletter-form">
+              <input
+                type="email"
+                className="newsletter-input"
+                placeholder="Seu melhor e-mail"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                required
+              />
+              <button type="submit" className="newsletter-submit" disabled={loading}>
+                {loading ? 'Inscrevendo...' : 'Inscrever'}
+              </button>
+            </form>
+          )}
+          {error && <p className="newsletter-error">{error}</p>}
         </div>
       </div>
-      {submitted && <p className="thank-you-message">Thank you for subscribing!</p>}
 
       <hr className="footer-line" />
 
@@ -60,9 +84,9 @@ const Footer = () => {
 
         {/* Left Side */}
         <div className="footer-left">
-          <a className="footer-logo"><img src={C} alt="C" /></a>
+          <a className="footer-logo"><img src={D} alt="D" /></a>
           <div className="footer-text">
-            Arandu <br />
+            Oliva <br />
           </div>
         </div>
 
@@ -91,66 +115,22 @@ const Footer = () => {
       {/* Footer Nav */}
       <div className="footerlinks-wrapper">
         <div className="footerlinks-section">
-          <h3 className="footerlinks-heading">Marketing</h3>
+          <h3 className="footerlinks-heading">Contato</h3>
           <ul className="footerlinks-list">
-            <li><a href="#">Estratégia</a></li>
-            <li><a href="#">Redes Sociais</a></li>
-            <li><a href="#">Tráfego Pago</a></li>
-            <li><a href="#">SEO</a></li>
-            <li><a href="#">Audiovisual</a></li>
-            <li><a href="#">Influenciadores</a></li>
-            <li><a href="#">Comunidade</a></li>
+            <li><a href="mailto:comercial@oliva.com.br">comercial@oliva-agency.com</a></li>
+            <li><a href="tel:+5511989517146">+55 11 98951-7146</a></li>
           </ul>
         </div>
 
         <div className="footerlinks-section">
-          <h3 className="footerlinks-heading">Tecnologia</h3>
-          <ul className="footerlinks-list">
-            <li><a href="#">Sites, Portais e Sistemas</a></li>
-            <li><a href="#">IA e Agentes</a></li>
-            <li><a href="#">Integrações e Automação</a></li>
-            <li><a href="#">Cloud</a></li>
-            <li><a href="#">Segurança e Gestão de Acessos</a></li>
-            <li><a href="#">Ferramentas Corporativas</a></li>
-          </ul>
-        </div>
-
-
-        <div className="footerlinks-section">
-          <h3 className="footerlinks-heading">Dados</h3>
-          <ul className="footerlinks-list">
-            <li>Dashboards e BI</li>
-            <li>Banco de Dados e Engenharia de Dados</li>
-            <li>Integração, ETL/ELT</li>
-            <li>Métricas e KPIs</li>
-          </ul>
-        </div>
-      </div>
-
-      {/*Line */}
-      <hr className="footer-line" />
-
-
-      {/* Footer Countries  */}
-      <div className="contact-section">
-        <div className="contact-column">
-          <h3 className="contact-title">Contato</h3>
-          <p className="contact-email">Comercial@arandu.com</p>
-          <p className="contact-email">+55 11 98951-7146</p>
-
-        </div>
-
-        <div className="contact-column">
-          <h4 className="location-heading">
-            <img src="https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png" alt="USA" className="flag-icon" />
+          <h3 className="footerlinks-heading">
+            <img src="https://www.countryflags.com/wp-content/uploads/brazil-flag-png-large.png" alt="Brazil" className="flag-icon" />{" "}
             São Paulo
-          </h4>
-          <p>Rua Professor Dr. José Marques da Cruz - Jardim das Acacias
-<br />São Paulo, Brazil</p>
-
-          <h4 className="location-heading">
-          </h4>
-          <p></p>
+          </h3>
+          <ul className="footerlinks-list">
+            <li>Rua Professor Dr. José Marques da Cruz - Jardim das Acacias</li>
+            <li>São Paulo, Brazil</li>
+          </ul>
         </div>
       </div>
 
@@ -159,9 +139,8 @@ const Footer = () => {
         <hr />
         <div className="coinband-footer-container">
           <span>Privacy policy</span>
-          <span>Public offer</span>
           <span>All rights reserved</span>
-          <span>Copyright © 2026 Arandu.</span>
+          <span>Copyright © 2026 Oliva.</span>
         </div>
       </div>
 

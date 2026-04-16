@@ -179,7 +179,7 @@
 
 @media (max-width: 650px) {
   .logo {
-    width: 32vw;
+    width: 35vw !important;
   }
 
   .navbar {
