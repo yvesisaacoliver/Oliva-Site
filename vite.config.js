@@ -2,6 +2,8 @@ import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import path from 'path'
 
+import { cloudflare } from "@cloudflare/vite-plugin";
+
 // https://vitejs.dev/config/
 export default defineConfig({
   base: './',
@@ -9,7 +11,7 @@ export default defineConfig({
   server: {
     host: '0.0.0.0', // Allows access from all devices on the network
   },
-  plugins: [react()],
+  plugins: [react(), cloudflare()],
   resolve: {
     alias: {
       '@components': path.resolve(__dirname, 'src/components'),
