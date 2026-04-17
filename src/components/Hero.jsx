@@ -7,11 +7,11 @@ const Hero = () => {
     <div>
       <section className="hero">
         <div className="hero-left">
-          <h1 className="hero-title">MARKETING, TECNOLOGIA E DADOS</h1>
-          <p className="hero-subtitle">Soluções digitais para acelerar seu crescimento</p>
+          <h1 className="hero-title">SUA MARCA MERECE MAIS</h1>
+          <p className="hero-subtitle">Conexão real entre sua marca e seu público.</p>
           <button className="hero-button" onClick={() => window.open('https://wa.me/5511989517146', '_blank')}>Solicitar Proposta</button>
           <p className="hero-description">
-            A Oliva é uma consultoria digital que une marketing, tecnologia e dados para desenvolver ferramentas sob medida para atrair e atender clientes, automatizar e otimizar processos, e transformar dados em dashboards que revelam os números do seu negócio e apoiam decisões mais inteligentes.
+            A Oliva une criação de marca, marketing, tecnologia e dados para gerar conexão real entre sua marca e seu público, fortalecendo presença, atraindo os clientes certos e transformando relacionamento em resultado.
           </p>
         </div>
         <div className="hero-right">
