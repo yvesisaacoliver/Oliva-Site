@@ -13,7 +13,7 @@ const GetInTouch = () => {
         <p className="contact-us-description">
           Conte o que você precisa e a gente monta um plano com estratégia, prazos e orçamento.
         </p>
-        <a href="https://wa.me/5511989517146" target="_blank" rel="noopener noreferrer" className="contact-us-button">
+        <a href="https://wa.me/5511991998553" target="_blank" rel="noopener noreferrer" className="contact-us-button">
           Solicitar proposta
         </a>
       </div>
