@@ -11,8 +11,7 @@ import serv5 from "../assets/serv5.avif";
 import serv6 from "../assets/serv6.avif";
 import serv7 from "../assets/serv7.webp";
 
-// ⚠️ TROQUE PELO SEU NÚMERO (código do país + DDD + número, sem espaços)
-const WHATSAPP_NUMBER = "5511989517146";
+const WHATSAPP_NUMBER = "5511991998553";
 
 const tabs = [
   {
