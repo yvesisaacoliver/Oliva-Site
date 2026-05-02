@@ -118,7 +118,7 @@ const Footer = () => {
           <h3 className="footerlinks-heading">Contato</h3>
           <ul className="footerlinks-list">
             <li><a href="mailto:comercial@oliva-agency.com.br">comercial@oliva-agency.com.br</a></li>
-            <li><a href="tel:+5511989517146">+55 11 98951-7146</a></li>
+            <li><a href="tel:+5511991998553">+55 11 99199-8553</a></li>
           </ul>
         </div>
 
